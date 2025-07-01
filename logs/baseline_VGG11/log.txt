@@ -1,0 +1,8 @@
+Epoch 1: Train Loss=4.3289, Val Loss=4.0534, Val Top-1 Acc=0.0677, Epoch Time=13164.13s
+Epoch 2: Train Loss=3.8769, Val Loss=3.7407, Val Top-1 Acc=0.1149, Epoch Time=13247.49s
+Epoch 3: Train Loss=3.6064, Val Loss=3.4809, Val Top-1 Acc=0.1516, Epoch Time=13182.78s
+Epoch 4: Train Loss=3.3319, Val Loss=3.3023, Val Top-1 Acc=0.1842, Epoch Time=13228.47s
+Epoch 5: Train Loss=3.0757, Val Loss=3.0544, Val Top-1 Acc=0.2304, Epoch Time=13194.46s
+Saved best model weights to checkpoints/baseline_VGG11.npz
+Total training time: 66017.37s
+Test Top-1 Accuracy: 0.2302

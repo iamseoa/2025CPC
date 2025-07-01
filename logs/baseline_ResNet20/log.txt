@@ -1,0 +1,1 @@
+Epoch 1: Train Loss=4.2393, Val Loss=3.8742, Val Top-1 Acc=0.1078, Epoch Time=129.29s
