@@ -26,17 +26,17 @@ class VGGBlock:
         return dout
 
 class CustomVGGNet:
-    def __init__(self, num_classes=100):
-        self.block1 = VGGBlock(3, 32, num_convs=1)
-        self.block2 = VGGBlock(32, 64, num_convs=1)
-        self.block3 = VGGBlock(64, 128, num_convs=2)
-        self.block4 = VGGBlock(128, 256, num_convs=2)
+    def __init__(self, num_classes=100, dropout_p=0.5):
+        self.block1 = VGGBlock(3, 32, num_convs=1)        # 32x32x3 -> 32ch
+        self.block2 = VGGBlock(32, 64, num_convs=1)       # 16x16x32 -> 64ch
+        self.block3 = VGGBlock(64, 128, num_convs=2)      # 8x8x64 -> 128ch
+        self.block4 = VGGBlock(128, 256, num_convs=2)     # 4x4x128 -> 256ch
 
         self.flatten = Flatten()
-        self.fc1 = Linear(256 * 2 * 2, 256)
+        self.fc1 = Linear(256 * 2 * 2, 512)               # (2x2 spatial for CIFAR) x 256ch -> 512
         self.relu1 = ReLU()
-        self.drop1 = Dropout(0.5)
-        self.fc2 = Linear(256, num_classes)
+        self.drop1 = Dropout(dropout_p)
+        self.fc2 = Linear(512, num_classes)
 
         self.layers = (
             [*self.block1.layers, *self.block2.layers, *self.block3.layers, *self.block4.layers,

@@ -26,7 +26,7 @@ class DenseLayer:
         return cp.concatenate([x, out], axis=-1)
 
     def backward(self, dout):
-        in_channels = self.bn.gamma.shape[0]
+        in_channels = self.bn.gamma.data.shape[0]
         dx = dout[..., :in_channels]
         dout_layer = dout[..., in_channels:]
         dout_layer = self.conv.backward(dout_layer)
@@ -99,7 +99,17 @@ class CustomDenseNet:
         self.trans2 = TransitionLayer(self.block2.out_channels, 128)
         self.block3 = DenseBlock(num_layers=4, in_channels=128, growth_rate=growth_rate)
         self.flatten = Flatten()
-        self.fc = Linear(self.block3.out_channels, num_classes)
+
+        dummy = cp.zeros((1, 32, 32, 3))
+        x = self.block1.forward(dummy)
+        x = self.trans1.forward(x)
+        x = self.block2.forward(x)
+        x = self.trans2.forward(x)
+        x = self.block3.forward(x)
+        x = self.flatten.forward(x)
+        in_features = x.shape[-1]
+
+        self.fc = Linear(in_features, num_classes)
 
         self.layers = (
             self.block1.layers +
@@ -139,4 +149,3 @@ class CustomDenseNet:
         dout = self.trans1.backward(dout)
         dout = self.block1.backward(dout)
         return dout
-

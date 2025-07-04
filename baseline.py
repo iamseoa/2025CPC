@@ -2,6 +2,8 @@ import os
 import cupy as cp
 from dataset import load_cifar100
 from models.CustomResNet import CustomResNet as ResNet20
+from models.CustomDenseNet import CustomDenseNet as MiniDenseNet
+from models.CustomVGGNet import CustomVGGNet as VGG11
 from losses.cross_entropy import CrossEntropyLoss
 from optim.sgd import SGD
 from utils.train_eval import Trainer, load_weights, assign_weights
@@ -15,7 +17,7 @@ def check_cupy_device():
     print(f"Cupy version: {cp.__version__}")
     print(f"CUDA available: {cp.cuda.is_available()}")
 
-def run_experiment(model_class, model_name, batch_size=128, lr=0.01, epochs=5, patience=10, resume_path=None, test_only=False):
+def run_experiment(model_class, model_name, batch_size=128, lr=0.01, epochs=100, patience=5, resume_path=None, test_only=False):
     train_loader, val_loader, test_loader = load_cifar100(batch_size=batch_size)
     model = model_class(num_classes=100)
     print_model_size(model.params, model_name)
@@ -23,7 +25,7 @@ def run_experiment(model_class, model_name, batch_size=128, lr=0.01, epochs=5, p
     optimizer = SGD(model.params, lr=lr)
     trainer = Trainer(model, optimizer, loss_fn, train_loader, val_loader,
                       max_epochs=epochs, patience=patience,
-                      experiment_name="baseline", model_name=model_name)
+                      experiment_name="baseline_epoch100", model_name=model_name)
 
     if test_only and resume_path is not None:
         assign_weights(model, load_weights(resume_path))
@@ -40,7 +42,19 @@ def run_experiment(model_class, model_name, batch_size=128, lr=0.01, epochs=5, p
 if __name__ == "__main__":
     check_cupy_device()
     cp.random.seed(42)
-    run_experiment(ResNet20, "ResNet20", epochs=1)
-    run_experiment(ResNet20, "ResNet20", test_only=True, resume_path="checkpoints/baseline_ResNet20.npz")
-    run_experiment(ResNet20, "ResNet20", epochs=1, resume_path="checkpoints/baseline_ResNet20.npz")
+    batch_size = 128
+    lr = 0.01
+    epochs = 100
+    patience = 5  
 
+    # ResNet20
+    run_experiment(ResNet20, "ResNet20", batch_size=batch_size, lr=lr, epochs=epochs, patience=patience)
+    run_experiment(ResNet20, "ResNet20", test_only=True, resume_path="checkpoints/baseline_epoch100_ResNet20.npz")
+
+    # DenseNet
+    run_experiment(MiniDenseNet, "MiniDenseNet", batch_size=batch_size, lr=lr, epochs=epochs, patience=patience)
+    run_experiment(MiniDenseNet, "MiniDenseNet", test_only=True, resume_path="checkpoints/baseline_epoch100_MiniDenseNet.npz")
+
+    # VGG11
+    run_experiment(VGG11, "VGG11", batch_size=batch_size, lr=lr, epochs=epochs, patience=patience)
+    run_experiment(VGG11, "VGG11", test_only=True, resume_path="checkpoints/baseline_epoch100_VGG11.npz")

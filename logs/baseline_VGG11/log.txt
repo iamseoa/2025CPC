@@ -6,3 +6,19 @@ Epoch 5: Train Loss=3.0757, Val Loss=3.0544, Val Top-1 Acc=0.2304, Epoch Time=13
 Saved best model weights to checkpoints/baseline_VGG11.npz
 Total training time: 66017.37s
 Test Top-1 Accuracy: 0.2302
+Epoch 1: Train Loss=4.3952, Train Top-1 Acc=0.0711, Train Top-5 Acc=0.2317, Val Loss=4.1346, Val Top-1 Acc=0.0656, Val Top-5 Acc=0.2315, Epoch Time=6546.58s
+Saved best model weights to checkpoints/baseline_VGG11.npz
+Total training time: 6546.58s
+Test Top-1 Accuracy: 0.0672
+Test Top-5 Accuracy: 0.2264
+Test Top-1 Accuracy (loaded weights): 0.0710
+Test Top-5 Accuracy (loaded weights): 0.2339
+Resume training from: checkpoints/baseline_VGG11.npz
+Epoch 1: Train Loss=4.5832, Train Top-1 Acc=0.0281, Train Top-5 Acc=0.1065, Val Loss=4.4882, Val Top-1 Acc=0.0272, Val Top-5 Acc=0.1021, Epoch Time=3252.88s
+Saved best model weights to checkpoints/baseline_VGG11.npz
+Total training time: 3252.88s
+Test Top-1 Accuracy: 0.0314
+Test Top-5 Accuracy: 0.1099
+Test Top-1 Accuracy (loaded weights): 0.0310
+Test Top-5 Accuracy (loaded weights): 0.1058
+Resume training from: checkpoints/baseline_VGG11.npz

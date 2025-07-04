@@ -1,7 +1,7 @@
 import os
 import cupy as cp
 from dataset import load_cifar100
-from models.CustomResNet import CustomResNet as ResNet20
+from models.CustomVGGNet import CustomVGGNet as VGG11
 from losses.cross_entropy import CrossEntropyLoss
 from optim.sgd import SGD
 from utils.train_eval import Trainer, load_weights, assign_weights
@@ -40,7 +40,7 @@ def run_experiment(model_class, model_name, batch_size=128, lr=0.01, epochs=5, p
 if __name__ == "__main__":
     check_cupy_device()
     cp.random.seed(42)
-    run_experiment(ResNet20, "ResNet20", epochs=1)
-    run_experiment(ResNet20, "ResNet20", test_only=True, resume_path="checkpoints/baseline_ResNet20.npz")
-    run_experiment(ResNet20, "ResNet20", epochs=1, resume_path="checkpoints/baseline_ResNet20.npz")
+    run_experiment(VGG11, "VGG11", epochs=1)
+    run_experiment(VGG11, "VGG11", test_only=True, resume_path="checkpoints/baseline_VGG11.npz")
+    run_experiment(VGG11, "VGG11", epochs=1, resume_path="checkpoints/baseline_VGG11.npz")
 

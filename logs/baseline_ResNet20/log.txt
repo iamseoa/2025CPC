@@ -1,1 +1,21 @@
 Epoch 1: Train Loss=4.2393, Val Loss=3.8742, Val Top-1 Acc=0.1078, Epoch Time=129.29s
+Epoch 2: Train Loss=3.7029, Val Loss=3.5622, Val Top-1 Acc=0.1511, Epoch Time=129.63s
+Epoch 3: Train Loss=3.4564, Val Loss=3.3895, Val Top-1 Acc=0.1774, Epoch Time=129.23s
+Epoch 4: Train Loss=3.2596, Val Loss=3.1830, Val Top-1 Acc=0.2130, Epoch Time=129.56s
+Epoch 5: Train Loss=3.0690, Val Loss=3.0362, Val Top-1 Acc=0.2387, Epoch Time=129.23s
+Saved best model weights to checkpoints/baseline_ResNet20.npz
+Total training time: 646.95s
+Test Top-1 Accuracy: 0.2332
+Test Top-1 Accuracy (loaded weights): 0.2476
+Resume training from: checkpoints/baseline_ResNet20.npz
+Epoch 1: Train Loss=2.9222, Val Loss=2.8680, Val Top-1 Acc=0.2687, Epoch Time=129.65s
+Epoch 2: Train Loss=2.7773, Val Loss=2.7104, Val Top-1 Acc=0.2961, Epoch Time=129.23s
+Epoch 3: Train Loss=2.6305, Val Loss=2.5991, Val Top-1 Acc=0.3240, Epoch Time=129.58s
+Epoch 1: Train Loss=4.2393, Train Top-1 Acc=0.1102, Train Top-5 Acc=0.3206, Val Loss=3.8742, Val Top-1 Acc=0.1078, Val Top-5 Acc=0.3103, Epoch Time=150.55s
+Saved best model weights to checkpoints/baseline_ResNet20.npz
+Total training time: 150.55s
+Test Top-1 Accuracy: 0.1023
+Test Top-5 Accuracy: 0.3048
+Test Top-1 Accuracy (loaded weights): 0.1102
+Test Top-5 Accuracy (loaded weights): 0.3255
+Resume training from: checkpoints/baseline_ResNet20.npz

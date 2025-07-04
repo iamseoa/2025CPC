@@ -1,0 +1,13 @@
+Epoch 1: Train Loss=3.5049, Train Top-1 Acc=0.3964, Train Top-5 Acc=0.6919, Val Loss=2.9628, Val Top-1 Acc=0.2899, Val Top-5 Acc=0.5796, Epoch Time=126.07s
+Saved best model weights to checkpoints/baseline_MiniDenseNet.npz
+Total training time: 126.07s
+Test Top-1 Accuracy: 0.2919
+Test Top-5 Accuracy: 0.5732
+Test Top-1 Accuracy (loaded weights): 0.3625
+Test Top-5 Accuracy (loaded weights): 0.6542
+Resume training from: checkpoints/baseline_MiniDenseNet.npz
+Epoch 1: Train Loss=2.4241, Train Top-1 Acc=0.5789, Train Top-5 Acc=0.8334, Val Loss=2.3370, Val Top-1 Acc=0.4157, Val Top-5 Acc=0.7034, Epoch Time=125.80s
+Saved best model weights to checkpoints/baseline_MiniDenseNet.npz
+Total training time: 125.80s
+Test Top-1 Accuracy: 0.4089
+Test Top-5 Accuracy: 0.7049
