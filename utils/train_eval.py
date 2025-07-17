@@ -18,7 +18,8 @@ def assign_weights(model, weight_list):
 
 class Trainer:
     def __init__(self, model, optimizer, loss_fn, train_loader, val_loader,
-                 max_epochs=200, patience=20, experiment_name="exp", model_name="model"):
+                 max_epochs=200, patience=20, experiment_name="exp", model_name="model",
+                 scheduler=None):
         self.model = model
         self.optimizer = optimizer
         self.loss_fn = loss_fn
@@ -28,6 +29,7 @@ class Trainer:
         self.patience = patience
         self.experiment_name = experiment_name
         self.model_name = model_name
+        self.scheduler = scheduler
 
         self.train_losses = []
         self.val_losses = []
@@ -57,7 +59,6 @@ class Trainer:
             train_loss = self._run_epoch(self.train_loader, training=True)
             val_loss = self._run_epoch(self.val_loader, training=False)
 
-            # Top-1, Top-5 for train/val
             train_top1, train_top5 = self.evaluate(self.train_loader, save_cm=False, calc_acc_only=True)
             val_top1, val_top5 = self.evaluate(self.val_loader, save_cm=False, calc_acc_only=True)
 
@@ -73,12 +74,26 @@ class Trainer:
             log_line = (
                 f"Epoch {epoch+1}: "
                 f"Train Loss={float(train_loss):.4f}, "
-                f"Train Top-1 Acc={train_top1:.4f}, Train Top-5 Acc={train_top5:.4f}, "
+                f"Train Top-1 Acc={float(train_top1):.4f}, Train Top-5 Acc={float(train_top5):.4f}, "
                 f"Val Loss={float(val_loss):.4f}, "
-                f"Val Top-1 Acc={val_top1:.4f}, Val Top-5 Acc={val_top5:.4f}, "
+                f"Val Top-1 Acc={float(val_top1):.4f}, Val Top-5 Acc={float(val_top5):.4f}, "
                 f"Epoch Time={epoch_time:.2f}s"
             )
             self._write_log(log_line)
+
+            if self.scheduler is not None:
+                if hasattr(self.scheduler, "step"):
+                    if "val_loss" in self.scheduler.step.__code__.co_varnames:
+                        self.scheduler.step(float(val_loss))
+                    else:
+                        self.scheduler.step()
+
+            if (epoch + 1) % 5 == 0:
+                ckpt_path = os.path.join(
+                    "checkpoints", f"{self.experiment_name}_{self.model_name}_epoch{epoch+1}.npz"
+                )
+                save_weights(ckpt_path, self._get_model_weights())
+                self._write_log(f"Checkpoint saved at {ckpt_path}")
 
             if val_top1 > self.best_val_acc:
                 self.best_val_acc = val_top1
