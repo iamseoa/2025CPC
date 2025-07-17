@@ -93,22 +93,28 @@ class TransitionLayer:
 
 class CustomDenseNet:
     def __init__(self, num_classes=100, growth_rate=12):
-        self.block1 = DenseBlock(num_layers=4, in_channels=3, growth_rate=growth_rate)
-        self.trans1 = TransitionLayer(self.block1.out_channels, 64)
-        self.block2 = DenseBlock(num_layers=4, in_channels=64, growth_rate=growth_rate)
-        self.trans2 = TransitionLayer(self.block2.out_channels, 128)
-        self.block3 = DenseBlock(num_layers=4, in_channels=128, growth_rate=growth_rate)
-        self.flatten = Flatten()
-
         dummy = cp.zeros((1, 32, 32, 3))
+
+        self.block1 = DenseBlock(num_layers=4, in_channels=3, growth_rate=growth_rate)
         x = self.block1.forward(dummy)
+
+        trans1_out_channels = 64
+        self.trans1 = TransitionLayer(x.shape[-1], trans1_out_channels)
         x = self.trans1.forward(x)
+
+        self.block2 = DenseBlock(num_layers=4, in_channels=x.shape[-1], growth_rate=growth_rate)
         x = self.block2.forward(x)
+
+        trans2_out_channels = 128
+        self.trans2 = TransitionLayer(x.shape[-1], trans2_out_channels)
         x = self.trans2.forward(x)
+
+        self.block3 = DenseBlock(num_layers=4, in_channels=x.shape[-1], growth_rate=growth_rate)
         x = self.block3.forward(x)
+
+        self.flatten = Flatten()
         x = self.flatten.forward(x)
         in_features = x.shape[-1]
-
         self.fc = Linear(in_features, num_classes)
 
         self.layers = (
@@ -149,3 +155,4 @@ class CustomDenseNet:
         dout = self.trans1.backward(dout)
         dout = self.block1.backward(dout)
         return dout
+
