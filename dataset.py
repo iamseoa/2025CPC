@@ -1,12 +1,78 @@
-# dataset.py
 import os
 import tarfile
 import urllib.request
 import numpy as np
 import cupy as cp
 import pickle
+from PIL import Image, ImageOps, ImageEnhance
 
 np.random.seed(42)
+
+# --------------------------- Augmentation ---------------------------
+
+def random_crop_flip(img, padding=2, flip_prob=0.3):
+    img = np.pad(img, ((padding, padding), (padding, padding), (0, 0)), mode='reflect')
+    h, w = img.shape[:2]
+    top = np.random.randint(0, h - 32 + 1)
+    left = np.random.randint(0, w - 32 + 1)
+    cropped = img[top:top+32, left:left+32]
+    if np.random.rand() < flip_prob:
+        cropped = np.fliplr(cropped)
+    return cropped
+
+def randaug(img):
+    pil = Image.fromarray((img * 255).astype(np.uint8))
+    pil = ImageEnhance.Color(pil).enhance(0.9 + 0.2 * np.random.rand())      # [0.9 ~ 1.1]
+    pil = ImageEnhance.Brightness(pil).enhance(0.9 + 0.2 * np.random.rand()) # [0.9 ~ 1.1]
+    return np.asarray(pil).astype(np.float32) / 255.0
+
+def cutout(img, mask_size=6):
+    h, w, _ = img.shape
+    y = np.random.randint(h)
+    x = np.random.randint(w)
+    y1 = np.clip(y - mask_size // 2, 0, h)
+    y2 = np.clip(y + mask_size // 2, 0, h)
+    x1 = np.clip(x - mask_size // 2, 0, w)
+    x2 = np.clip(x + mask_size // 2, 0, w)
+    img[y1:y2, x1:x2, :] = 0.0
+    return img
+
+def color_jitter(img):
+    pil = Image.fromarray((img * 255).astype(np.uint8))
+    pil = ImageEnhance.Brightness(pil).enhance(0.95 + 0.1 * np.random.rand())
+    pil = ImageEnhance.Contrast(pil).enhance(0.95 + 0.1 * np.random.rand())
+    pil = ImageEnhance.Color(pil).enhance(0.95 + 0.1 * np.random.rand())
+    return np.asarray(pil).astype(np.float32) / 255.0
+
+def gaussian_noise(img, std=0.05):
+    noise = np.random.normal(0, std, img.shape).astype(np.float32)
+    return np.clip(img + noise, 0.0, 1.0)
+
+def apply_augmentation(x, aug_type="basic"):
+    out = []
+    for img in x:
+        if aug_type == "basic":
+            img_aug = random_crop_flip(img)
+        elif aug_type == "randaug":
+            img_aug = random_crop_flip(img)
+            img_aug = randaug(img_aug)
+        elif aug_type == "cutout":
+            img_aug = random_crop_flip(img)
+            img_aug = cutout(img_aug)
+        elif aug_type == "jitter":
+            img_aug = random_crop_flip(img)
+            img_aug = color_jitter(img_aug)
+        elif aug_type == "gauss":
+            img_aug = random_crop_flip(img)
+            img_aug = gaussian_noise(img_aug)
+        else:
+            img_aug = img
+        out.append(img_aug)
+    return np.stack(out)
+
+
+
+# ---------------------------- Dataloader ----------------------------
 
 class DataLoader:
     def __init__(self, x, y, batch_size=128, shuffle=True):
@@ -43,6 +109,8 @@ class DataLoader:
     def dataset(self):
         return self
 
+# ---------------------------- CIFAR Loader ---------------------------
+
 def download_and_extract_cifar100(destination='cifar-100-python'):
     url = 'https://www.cs.toronto.edu/~kriz/cifar-100-python.tar.gz'
     archive_name = 'cifar-100-python.tar.gz'
@@ -59,7 +127,7 @@ def _unpickle(file):
 
 def _preprocess(x):
     x = x.astype(np.float32) / 255.0
-    x = x.reshape(-1, 3, 32, 32).transpose(0, 2, 3, 1)
+    x = x.reshape(-1, 3, 32, 32).transpose(0, 2, 3, 1)  # NCHW → NHWC
     return x
 
 def _split_dataset(x, y):
@@ -76,7 +144,7 @@ def _split_dataset(x, y):
 def _to_gpu(*arrays):
     return [cp.asarray(a) for a in arrays]
 
-def load_cifar100(batch_size=128):
+def load_cifar100(batch_size=128, augmentation="none"):
     download_and_extract_cifar100()
     train_dict = _unpickle('cifar-100-python/train')
     test_dict = _unpickle('cifar-100-python/test')
@@ -85,6 +153,9 @@ def load_cifar100(batch_size=128):
     y = np.concatenate([train_dict[b'fine_labels'], test_dict[b'fine_labels']], axis=0)
     x = _preprocess(x)
     x_train, y_train, x_val, y_val, x_test, y_test = _split_dataset(x, y)
+
+    if augmentation != "none":
+        x_train = apply_augmentation(x_train, aug_type=augmentation)
 
     x_train, y_train, x_val, y_val, x_test, y_test = _to_gpu(
         x_train, y_train, x_val, y_val, x_test, y_test
