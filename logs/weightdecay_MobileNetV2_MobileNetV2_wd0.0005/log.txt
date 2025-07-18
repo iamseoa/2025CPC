@@ -1,0 +1,91 @@
+Epoch 1: Train Loss=4.3902, Train Top-1 Acc=0.0928, Train Top-5 Acc=0.2925, Val Loss=3.9890, Val Top-1 Acc=0.0872, Val Top-5 Acc=0.2801, Epoch Time=293.95s
+Epoch 2: Train Loss=3.7886, Train Top-1 Acc=0.1523, Train Top-5 Acc=0.4092, Val Loss=3.6497, Val Top-1 Acc=0.1326, Val Top-5 Acc=0.3842, Epoch Time=294.50s
+Epoch 3: Train Loss=3.4708, Train Top-1 Acc=0.1981, Train Top-5 Acc=0.4803, Val Loss=3.4545, Val Top-1 Acc=0.1715, Val Top-5 Acc=0.4449, Epoch Time=294.73s
+Epoch 4: Train Loss=3.2364, Train Top-1 Acc=0.2430, Train Top-5 Acc=0.5437, Val Loss=3.2675, Val Top-1 Acc=0.2065, Val Top-5 Acc=0.4861, Epoch Time=295.47s
+Epoch 5: Train Loss=3.0486, Train Top-1 Acc=0.2783, Train Top-5 Acc=0.5919, Val Loss=3.1551, Val Top-1 Acc=0.2312, Val Top-5 Acc=0.5212, Epoch Time=295.14s
+Checkpoint saved at checkpoints/weightdecay_MobileNetV2_MobileNetV2_wd0.0005_epoch5.npz
+Epoch 6: Train Loss=2.8861, Train Top-1 Acc=0.3048, Train Top-5 Acc=0.6225, Val Loss=3.0864, Val Top-1 Acc=0.2393, Val Top-5 Acc=0.5362, Epoch Time=294.89s
+Epoch 7: Train Loss=2.7394, Train Top-1 Acc=0.3345, Train Top-5 Acc=0.6567, Val Loss=3.0130, Val Top-1 Acc=0.2596, Val Top-5 Acc=0.5542, Epoch Time=295.61s
+Epoch 8: Train Loss=2.6123, Train Top-1 Acc=0.3609, Train Top-5 Acc=0.6823, Val Loss=2.9455, Val Top-1 Acc=0.2698, Val Top-5 Acc=0.5663, Epoch Time=295.76s
+Epoch 9: Train Loss=2.4813, Train Top-1 Acc=0.3925, Train Top-5 Acc=0.7183, Val Loss=2.9048, Val Top-1 Acc=0.2872, Val Top-5 Acc=0.5838, Epoch Time=294.76s
+Epoch 10: Train Loss=2.3662, Train Top-1 Acc=0.4166, Train Top-5 Acc=0.7393, Val Loss=2.8624, Val Top-1 Acc=0.2968, Val Top-5 Acc=0.6005, Epoch Time=295.62s
+Checkpoint saved at checkpoints/weightdecay_MobileNetV2_MobileNetV2_wd0.0005_epoch10.npz
+Epoch 11: Train Loss=2.2476, Train Top-1 Acc=0.4482, Train Top-5 Acc=0.7662, Val Loss=2.8347, Val Top-1 Acc=0.3008, Val Top-5 Acc=0.6050, Epoch Time=293.37s
+Epoch 12: Train Loss=2.1417, Train Top-1 Acc=0.4726, Train Top-5 Acc=0.7882, Val Loss=2.8229, Val Top-1 Acc=0.3080, Val Top-5 Acc=0.6081, Epoch Time=294.20s
+Epoch 13: Train Loss=2.0371, Train Top-1 Acc=0.4983, Train Top-5 Acc=0.8094, Val Loss=2.8237, Val Top-1 Acc=0.3121, Val Top-5 Acc=0.6152, Epoch Time=293.57s
+Epoch 14: Train Loss=1.9323, Train Top-1 Acc=0.5165, Train Top-5 Acc=0.8248, Val Loss=2.8282, Val Top-1 Acc=0.3167, Val Top-5 Acc=0.6152, Epoch Time=294.12s
+Epoch 15: Train Loss=1.8502, Train Top-1 Acc=0.5456, Train Top-5 Acc=0.8461, Val Loss=2.8394, Val Top-1 Acc=0.3178, Val Top-5 Acc=0.6236, Epoch Time=293.63s
+Checkpoint saved at checkpoints/weightdecay_MobileNetV2_MobileNetV2_wd0.0005_epoch15.npz
+Epoch 16: Train Loss=1.7507, Train Top-1 Acc=0.5755, Train Top-5 Acc=0.8667, Val Loss=2.8541, Val Top-1 Acc=0.3225, Val Top-5 Acc=0.6259, Epoch Time=294.42s
+Epoch 17: Train Loss=1.6537, Train Top-1 Acc=0.5942, Train Top-5 Acc=0.8750, Val Loss=2.8590, Val Top-1 Acc=0.3247, Val Top-5 Acc=0.6248, Epoch Time=293.68s
+Epoch 18: Train Loss=1.5694, Train Top-1 Acc=0.6060, Train Top-5 Acc=0.8861, Val Loss=2.9008, Val Top-1 Acc=0.3251, Val Top-5 Acc=0.6241, Epoch Time=294.49s
+Epoch 19: Train Loss=1.4821, Train Top-1 Acc=0.6361, Train Top-5 Acc=0.9056, Val Loss=2.9183, Val Top-1 Acc=0.3319, Val Top-5 Acc=0.6259, Epoch Time=294.18s
+Epoch 20: Train Loss=1.3911, Train Top-1 Acc=0.6649, Train Top-5 Acc=0.9189, Val Loss=2.9487, Val Top-1 Acc=0.3331, Val Top-5 Acc=0.6255, Epoch Time=295.07s
+Checkpoint saved at checkpoints/weightdecay_MobileNetV2_MobileNetV2_wd0.0005_epoch20.npz
+Epoch 21: Train Loss=1.3136, Train Top-1 Acc=0.6825, Train Top-5 Acc=0.9272, Val Loss=3.0025, Val Top-1 Acc=0.3335, Val Top-5 Acc=0.6269, Epoch Time=293.93s
+Epoch 22: Train Loss=1.2351, Train Top-1 Acc=0.6968, Train Top-5 Acc=0.9349, Val Loss=3.0584, Val Top-1 Acc=0.3225, Val Top-5 Acc=0.6208, Epoch Time=294.42s
+Epoch 23: Train Loss=1.1590, Train Top-1 Acc=0.7199, Train Top-5 Acc=0.9446, Val Loss=3.0886, Val Top-1 Acc=0.3278, Val Top-5 Acc=0.6147, Epoch Time=294.45s
+Epoch 24: Train Loss=1.0996, Train Top-1 Acc=0.7265, Train Top-5 Acc=0.9489, Val Loss=3.1544, Val Top-1 Acc=0.3225, Val Top-5 Acc=0.6148, Epoch Time=294.75s
+Epoch 25: Train Loss=1.0218, Train Top-1 Acc=0.7466, Train Top-5 Acc=0.9562, Val Loss=3.1898, Val Top-1 Acc=0.3250, Val Top-5 Acc=0.6157, Epoch Time=294.10s
+Checkpoint saved at checkpoints/weightdecay_MobileNetV2_MobileNetV2_wd0.0005_epoch25.npz
+Epoch 26: Train Loss=0.9667, Train Top-1 Acc=0.7675, Train Top-5 Acc=0.9656, Val Loss=3.1950, Val Top-1 Acc=0.3312, Val Top-5 Acc=0.6171, Epoch Time=294.43s
+Epoch 27: Train Loss=0.8964, Train Top-1 Acc=0.7745, Train Top-5 Acc=0.9670, Val Loss=3.2604, Val Top-1 Acc=0.3308, Val Top-5 Acc=0.6163, Epoch Time=295.67s
+Epoch 28: Train Loss=0.8452, Train Top-1 Acc=0.7953, Train Top-5 Acc=0.9728, Val Loss=3.3122, Val Top-1 Acc=0.3320, Val Top-5 Acc=0.6160, Epoch Time=295.55s
+Epoch 29: Train Loss=0.7949, Train Top-1 Acc=0.8030, Train Top-5 Acc=0.9774, Val Loss=3.3390, Val Top-1 Acc=0.3210, Val Top-5 Acc=0.6196, Epoch Time=295.61s
+Epoch 30: Train Loss=0.7424, Train Top-1 Acc=0.8251, Train Top-5 Acc=0.9829, Val Loss=3.3815, Val Top-1 Acc=0.3340, Val Top-5 Acc=0.6161, Epoch Time=295.44s
+Checkpoint saved at checkpoints/weightdecay_MobileNetV2_MobileNetV2_wd0.0005_epoch30.npz
+Epoch 31: Train Loss=0.6810, Train Top-1 Acc=0.8270, Train Top-5 Acc=0.9823, Val Loss=3.4626, Val Top-1 Acc=0.3235, Val Top-5 Acc=0.6104, Epoch Time=294.66s
+Epoch 32: Train Loss=0.6363, Train Top-1 Acc=0.8445, Train Top-5 Acc=0.9856, Val Loss=3.4670, Val Top-1 Acc=0.3247, Val Top-5 Acc=0.6088, Epoch Time=295.50s
+Epoch 33: Train Loss=0.5860, Train Top-1 Acc=0.8483, Train Top-5 Acc=0.9878, Val Loss=3.4592, Val Top-1 Acc=0.3336, Val Top-5 Acc=0.6222, Epoch Time=295.40s
+Epoch 34: Train Loss=0.5684, Train Top-1 Acc=0.8678, Train Top-5 Acc=0.9910, Val Loss=3.5140, Val Top-1 Acc=0.3288, Val Top-5 Acc=0.6113, Epoch Time=295.43s
+Epoch 35: Train Loss=0.5364, Train Top-1 Acc=0.8760, Train Top-5 Acc=0.9914, Val Loss=3.5342, Val Top-1 Acc=0.3301, Val Top-5 Acc=0.6133, Epoch Time=295.43s
+Checkpoint saved at checkpoints/weightdecay_MobileNetV2_MobileNetV2_wd0.0005_epoch35.npz
+Epoch 36: Train Loss=0.5006, Train Top-1 Acc=0.8826, Train Top-5 Acc=0.9933, Val Loss=3.5544, Val Top-1 Acc=0.3330, Val Top-5 Acc=0.6172, Epoch Time=294.65s
+Epoch 37: Train Loss=0.4504, Train Top-1 Acc=0.8890, Train Top-5 Acc=0.9940, Val Loss=3.6014, Val Top-1 Acc=0.3277, Val Top-5 Acc=0.6107, Epoch Time=294.94s
+Epoch 38: Train Loss=0.4354, Train Top-1 Acc=0.9060, Train Top-5 Acc=0.9956, Val Loss=3.5974, Val Top-1 Acc=0.3372, Val Top-5 Acc=0.6120, Epoch Time=295.31s
+Epoch 39: Train Loss=0.3862, Train Top-1 Acc=0.9165, Train Top-5 Acc=0.9962, Val Loss=3.6284, Val Top-1 Acc=0.3307, Val Top-5 Acc=0.6155, Epoch Time=295.56s
+Epoch 40: Train Loss=0.3646, Train Top-1 Acc=0.9199, Train Top-5 Acc=0.9971, Val Loss=3.6313, Val Top-1 Acc=0.3365, Val Top-5 Acc=0.6178, Epoch Time=295.43s
+Checkpoint saved at checkpoints/weightdecay_MobileNetV2_MobileNetV2_wd0.0005_epoch40.npz
+Epoch 41: Train Loss=0.3243, Train Top-1 Acc=0.9308, Train Top-5 Acc=0.9972, Val Loss=3.6859, Val Top-1 Acc=0.3334, Val Top-5 Acc=0.6157, Epoch Time=294.40s
+Epoch 42: Train Loss=0.3059, Train Top-1 Acc=0.9310, Train Top-5 Acc=0.9979, Val Loss=3.7056, Val Top-1 Acc=0.3362, Val Top-5 Acc=0.6067, Epoch Time=294.34s
+Epoch 43: Train Loss=0.2855, Train Top-1 Acc=0.9376, Train Top-5 Acc=0.9982, Val Loss=3.7268, Val Top-1 Acc=0.3342, Val Top-5 Acc=0.6105, Epoch Time=294.25s
+Epoch 44: Train Loss=0.2794, Train Top-1 Acc=0.9431, Train Top-5 Acc=0.9982, Val Loss=3.7434, Val Top-1 Acc=0.3355, Val Top-5 Acc=0.6076, Epoch Time=294.15s
+Epoch 45: Train Loss=0.2632, Train Top-1 Acc=0.9431, Train Top-5 Acc=0.9986, Val Loss=3.7403, Val Top-1 Acc=0.3282, Val Top-5 Acc=0.6120, Epoch Time=294.23s
+Checkpoint saved at checkpoints/weightdecay_MobileNetV2_MobileNetV2_wd0.0005_epoch45.npz
+Epoch 46: Train Loss=0.2253, Train Top-1 Acc=0.9584, Train Top-5 Acc=0.9990, Val Loss=3.7462, Val Top-1 Acc=0.3406, Val Top-5 Acc=0.6065, Epoch Time=294.34s
+Epoch 47: Train Loss=0.2234, Train Top-1 Acc=0.9541, Train Top-5 Acc=0.9991, Val Loss=3.7314, Val Top-1 Acc=0.3397, Val Top-5 Acc=0.6182, Epoch Time=294.32s
+Epoch 48: Train Loss=0.2109, Train Top-1 Acc=0.9613, Train Top-5 Acc=0.9993, Val Loss=3.7399, Val Top-1 Acc=0.3324, Val Top-5 Acc=0.6147, Epoch Time=294.92s
+Epoch 49: Train Loss=0.1909, Train Top-1 Acc=0.9628, Train Top-5 Acc=0.9991, Val Loss=3.7069, Val Top-1 Acc=0.3417, Val Top-5 Acc=0.6106, Epoch Time=294.58s
+Epoch 50: Train Loss=0.1902, Train Top-1 Acc=0.9654, Train Top-5 Acc=0.9996, Val Loss=3.7559, Val Top-1 Acc=0.3344, Val Top-5 Acc=0.6079, Epoch Time=295.06s
+Checkpoint saved at checkpoints/weightdecay_MobileNetV2_MobileNetV2_wd0.0005_epoch50.npz
+Epoch 51: Train Loss=0.1717, Train Top-1 Acc=0.9652, Train Top-5 Acc=0.9994, Val Loss=3.7395, Val Top-1 Acc=0.3361, Val Top-5 Acc=0.6160, Epoch Time=295.00s
+Epoch 52: Train Loss=0.1455, Train Top-1 Acc=0.9773, Train Top-5 Acc=0.9998, Val Loss=3.7432, Val Top-1 Acc=0.3385, Val Top-5 Acc=0.6137, Epoch Time=295.14s
+Epoch 53: Train Loss=0.1324, Train Top-1 Acc=0.9821, Train Top-5 Acc=0.9998, Val Loss=3.6821, Val Top-1 Acc=0.3441, Val Top-5 Acc=0.6148, Epoch Time=295.40s
+Epoch 54: Train Loss=0.1187, Train Top-1 Acc=0.9800, Train Top-5 Acc=0.9998, Val Loss=3.7409, Val Top-1 Acc=0.3391, Val Top-5 Acc=0.6171, Epoch Time=295.09s
+Epoch 55: Train Loss=0.1056, Train Top-1 Acc=0.9839, Train Top-5 Acc=0.9999, Val Loss=3.6894, Val Top-1 Acc=0.3443, Val Top-5 Acc=0.6155, Epoch Time=295.19s
+Checkpoint saved at checkpoints/weightdecay_MobileNetV2_MobileNetV2_wd0.0005_epoch55.npz
+Epoch 56: Train Loss=0.1014, Train Top-1 Acc=0.9858, Train Top-5 Acc=0.9999, Val Loss=3.6807, Val Top-1 Acc=0.3440, Val Top-5 Acc=0.6167, Epoch Time=294.77s
+Epoch 57: Train Loss=0.0926, Train Top-1 Acc=0.9893, Train Top-5 Acc=0.9998, Val Loss=3.6860, Val Top-1 Acc=0.3389, Val Top-5 Acc=0.6118, Epoch Time=295.05s
+Epoch 58: Train Loss=0.0752, Train Top-1 Acc=0.9909, Train Top-5 Acc=0.9999, Val Loss=3.6479, Val Top-1 Acc=0.3437, Val Top-5 Acc=0.6126, Epoch Time=295.70s
+Epoch 59: Train Loss=0.0683, Train Top-1 Acc=0.9939, Train Top-5 Acc=1.0000, Val Loss=3.6399, Val Top-1 Acc=0.3429, Val Top-5 Acc=0.6147, Epoch Time=296.35s
+Epoch 60: Train Loss=0.0643, Train Top-1 Acc=0.9946, Train Top-5 Acc=1.0000, Val Loss=3.6138, Val Top-1 Acc=0.3427, Val Top-5 Acc=0.6139, Epoch Time=295.20s
+Checkpoint saved at checkpoints/weightdecay_MobileNetV2_MobileNetV2_wd0.0005_epoch60.npz
+Epoch 61: Train Loss=0.0605, Train Top-1 Acc=0.9962, Train Top-5 Acc=1.0000, Val Loss=3.5974, Val Top-1 Acc=0.3500, Val Top-5 Acc=0.6166, Epoch Time=294.30s
+Epoch 62: Train Loss=0.0456, Train Top-1 Acc=0.9979, Train Top-5 Acc=1.0000, Val Loss=3.5324, Val Top-1 Acc=0.3508, Val Top-5 Acc=0.6178, Epoch Time=294.59s
+Epoch 63: Train Loss=0.0422, Train Top-1 Acc=0.9982, Train Top-5 Acc=1.0000, Val Loss=3.5173, Val Top-1 Acc=0.3520, Val Top-5 Acc=0.6186, Epoch Time=294.86s
+Epoch 64: Train Loss=0.0404, Train Top-1 Acc=0.9980, Train Top-5 Acc=1.0000, Val Loss=3.4953, Val Top-1 Acc=0.3573, Val Top-5 Acc=0.6184, Epoch Time=295.69s
+Epoch 65: Train Loss=0.0392, Train Top-1 Acc=0.9987, Train Top-5 Acc=1.0000, Val Loss=3.4723, Val Top-1 Acc=0.3552, Val Top-5 Acc=0.6186, Epoch Time=295.34s
+Checkpoint saved at checkpoints/weightdecay_MobileNetV2_MobileNetV2_wd0.0005_epoch65.npz
+Epoch 66: Train Loss=0.0340, Train Top-1 Acc=0.9989, Train Top-5 Acc=1.0000, Val Loss=3.4544, Val Top-1 Acc=0.3524, Val Top-5 Acc=0.6166, Epoch Time=294.18s
+Epoch 67: Train Loss=0.0349, Train Top-1 Acc=0.9992, Train Top-5 Acc=1.0000, Val Loss=3.4150, Val Top-1 Acc=0.3551, Val Top-5 Acc=0.6198, Epoch Time=295.02s
+Epoch 68: Train Loss=0.0331, Train Top-1 Acc=0.9991, Train Top-5 Acc=1.0000, Val Loss=3.4171, Val Top-1 Acc=0.3553, Val Top-5 Acc=0.6181, Epoch Time=295.10s
+Epoch 69: Train Loss=0.0317, Train Top-1 Acc=0.9993, Train Top-5 Acc=1.0000, Val Loss=3.3724, Val Top-1 Acc=0.3494, Val Top-5 Acc=0.6206, Epoch Time=294.88s
+Epoch 70: Train Loss=0.0314, Train Top-1 Acc=0.9995, Train Top-5 Acc=1.0000, Val Loss=3.3603, Val Top-1 Acc=0.3545, Val Top-5 Acc=0.6178, Epoch Time=293.95s
+Checkpoint saved at checkpoints/weightdecay_MobileNetV2_MobileNetV2_wd0.0005_epoch70.npz
+Epoch 71: Train Loss=0.0337, Train Top-1 Acc=0.9993, Train Top-5 Acc=1.0000, Val Loss=3.3702, Val Top-1 Acc=0.3507, Val Top-5 Acc=0.6115, Epoch Time=294.38s
+Epoch 72: Train Loss=0.0316, Train Top-1 Acc=0.9991, Train Top-5 Acc=1.0000, Val Loss=3.3418, Val Top-1 Acc=0.3525, Val Top-5 Acc=0.6146, Epoch Time=294.70s
+Epoch 73: Train Loss=0.0308, Train Top-1 Acc=0.9991, Train Top-5 Acc=1.0000, Val Loss=3.3340, Val Top-1 Acc=0.3549, Val Top-5 Acc=0.6154, Epoch Time=295.15s
+Epoch 74: Train Loss=0.0308, Train Top-1 Acc=0.9994, Train Top-5 Acc=1.0000, Val Loss=3.3185, Val Top-1 Acc=0.3562, Val Top-5 Acc=0.6131, Epoch Time=294.86s
+Early stopping at epoch 74
+Saved best model weights to checkpoints/weightdecay_MobileNetV2_MobileNetV2_wd0.0005.npz
+Total training time: 21816.51s

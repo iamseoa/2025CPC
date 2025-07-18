@@ -1,0 +1,61 @@
+Epoch 1: Train Loss=4.4081, Train Top-1 Acc=0.0626, Train Top-5 Acc=0.2185, Val Loss=4.1478, Val Top-1 Acc=0.0645, Val Top-5 Acc=0.2172, Epoch Time=151.04s
+Epoch 2: Train Loss=3.9973, Train Top-1 Acc=0.0924, Train Top-5 Acc=0.2928, Val Loss=3.9154, Val Top-1 Acc=0.0933, Val Top-5 Acc=0.2872, Epoch Time=150.59s
+Epoch 3: Train Loss=3.8046, Train Top-1 Acc=0.1168, Train Top-5 Acc=0.3563, Val Loss=3.7241, Val Top-1 Acc=0.1148, Val Top-5 Acc=0.3554, Epoch Time=151.03s
+Epoch 4: Train Loss=3.6440, Train Top-1 Acc=0.1452, Train Top-5 Acc=0.3968, Val Loss=3.6093, Val Top-1 Acc=0.1419, Val Top-5 Acc=0.3860, Epoch Time=150.60s
+Epoch 5: Train Loss=3.4966, Train Top-1 Acc=0.1727, Train Top-5 Acc=0.4468, Val Loss=3.4320, Val Top-1 Acc=0.1666, Val Top-5 Acc=0.4420, Epoch Time=151.04s
+Checkpoint saved at checkpoints/scheduler_ResNet20_ResNet20_bs128_lr0.01_mom0.99_drop0.0_xavier-uniform_none_cutout_epoch5.npz
+Epoch 6: Train Loss=3.3337, Train Top-1 Acc=0.2040, Train Top-5 Acc=0.4929, Val Loss=3.2892, Val Top-1 Acc=0.1940, Val Top-5 Acc=0.4744, Epoch Time=150.59s
+Epoch 7: Train Loss=3.2265, Train Top-1 Acc=0.2217, Train Top-5 Acc=0.5166, Val Loss=3.1993, Val Top-1 Acc=0.2186, Val Top-5 Acc=0.4976, Epoch Time=151.04s
+Epoch 8: Train Loss=3.0976, Train Top-1 Acc=0.2477, Train Top-5 Acc=0.5553, Val Loss=3.0754, Val Top-1 Acc=0.2315, Val Top-5 Acc=0.5355, Epoch Time=150.58s
+Epoch 9: Train Loss=2.9586, Train Top-1 Acc=0.2661, Train Top-5 Acc=0.5815, Val Loss=2.9913, Val Top-1 Acc=0.2529, Val Top-5 Acc=0.5617, Epoch Time=151.05s
+Epoch 10: Train Loss=2.8605, Train Top-1 Acc=0.2973, Train Top-5 Acc=0.6129, Val Loss=2.8544, Val Top-1 Acc=0.2767, Val Top-5 Acc=0.5899, Epoch Time=150.59s
+Checkpoint saved at checkpoints/scheduler_ResNet20_ResNet20_bs128_lr0.01_mom0.99_drop0.0_xavier-uniform_none_cutout_epoch10.npz
+Epoch 11: Train Loss=2.7389, Train Top-1 Acc=0.3070, Train Top-5 Acc=0.6340, Val Loss=2.7846, Val Top-1 Acc=0.2827, Val Top-5 Acc=0.6124, Epoch Time=151.05s
+Epoch 12: Train Loss=2.6421, Train Top-1 Acc=0.3376, Train Top-5 Acc=0.6602, Val Loss=2.6663, Val Top-1 Acc=0.3144, Val Top-5 Acc=0.6376, Epoch Time=150.60s
+Epoch 13: Train Loss=2.5284, Train Top-1 Acc=0.3499, Train Top-5 Acc=0.6823, Val Loss=2.6256, Val Top-1 Acc=0.3239, Val Top-5 Acc=0.6494, Epoch Time=151.04s
+Epoch 14: Train Loss=2.4457, Train Top-1 Acc=0.3766, Train Top-5 Acc=0.7095, Val Loss=2.5385, Val Top-1 Acc=0.3394, Val Top-5 Acc=0.6729, Epoch Time=150.61s
+Epoch 15: Train Loss=2.3526, Train Top-1 Acc=0.3885, Train Top-5 Acc=0.7179, Val Loss=2.5068, Val Top-1 Acc=0.3542, Val Top-5 Acc=0.6734, Epoch Time=151.07s
+Checkpoint saved at checkpoints/scheduler_ResNet20_ResNet20_bs128_lr0.01_mom0.99_drop0.0_xavier-uniform_none_cutout_epoch15.npz
+Epoch 16: Train Loss=2.2851, Train Top-1 Acc=0.4086, Train Top-5 Acc=0.7378, Val Loss=2.4227, Val Top-1 Acc=0.3725, Val Top-5 Acc=0.6963, Epoch Time=150.61s
+Epoch 17: Train Loss=2.2239, Train Top-1 Acc=0.4133, Train Top-5 Acc=0.7463, Val Loss=2.3994, Val Top-1 Acc=0.3695, Val Top-5 Acc=0.7048, Epoch Time=151.06s
+Epoch 18: Train Loss=2.1783, Train Top-1 Acc=0.4408, Train Top-5 Acc=0.7657, Val Loss=2.3248, Val Top-1 Acc=0.3881, Val Top-5 Acc=0.7116, Epoch Time=150.63s
+Epoch 19: Train Loss=2.1240, Train Top-1 Acc=0.4356, Train Top-5 Acc=0.7658, Val Loss=2.3455, Val Top-1 Acc=0.3864, Val Top-5 Acc=0.7071, Epoch Time=151.07s
+Epoch 20: Train Loss=2.0904, Train Top-1 Acc=0.4612, Train Top-5 Acc=0.7825, Val Loss=2.2918, Val Top-1 Acc=0.3928, Val Top-5 Acc=0.7184, Epoch Time=150.62s
+Checkpoint saved at checkpoints/scheduler_ResNet20_ResNet20_bs128_lr0.01_mom0.99_drop0.0_xavier-uniform_none_cutout_epoch20.npz
+Epoch 21: Train Loss=2.0256, Train Top-1 Acc=0.4626, Train Top-5 Acc=0.7862, Val Loss=2.2927, Val Top-1 Acc=0.3988, Val Top-5 Acc=0.7225, Epoch Time=151.08s
+Epoch 22: Train Loss=1.9879, Train Top-1 Acc=0.4678, Train Top-5 Acc=0.7883, Val Loss=2.3087, Val Top-1 Acc=0.3919, Val Top-5 Acc=0.7191, Epoch Time=150.63s
+Epoch 23: Train Loss=1.9530, Train Top-1 Acc=0.4822, Train Top-5 Acc=0.8013, Val Loss=2.2771, Val Top-1 Acc=0.4080, Val Top-5 Acc=0.7252, Epoch Time=151.08s
+Epoch 24: Train Loss=1.9219, Train Top-1 Acc=0.4934, Train Top-5 Acc=0.8066, Val Loss=2.2663, Val Top-1 Acc=0.4103, Val Top-5 Acc=0.7305, Epoch Time=150.61s
+Epoch 25: Train Loss=1.8951, Train Top-1 Acc=0.5046, Train Top-5 Acc=0.8131, Val Loss=2.2552, Val Top-1 Acc=0.4098, Val Top-5 Acc=0.7303, Epoch Time=151.08s
+Checkpoint saved at checkpoints/scheduler_ResNet20_ResNet20_bs128_lr0.01_mom0.99_drop0.0_xavier-uniform_none_cutout_epoch25.npz
+Epoch 26: Train Loss=1.8592, Train Top-1 Acc=0.5075, Train Top-5 Acc=0.8190, Val Loss=2.2543, Val Top-1 Acc=0.4154, Val Top-5 Acc=0.7290, Epoch Time=150.62s
+Epoch 27: Train Loss=1.8253, Train Top-1 Acc=0.5246, Train Top-5 Acc=0.8303, Val Loss=2.2414, Val Top-1 Acc=0.4201, Val Top-5 Acc=0.7329, Epoch Time=151.08s
+Epoch 28: Train Loss=1.7827, Train Top-1 Acc=0.5249, Train Top-5 Acc=0.8352, Val Loss=2.2558, Val Top-1 Acc=0.4138, Val Top-5 Acc=0.7324, Epoch Time=150.62s
+Epoch 29: Train Loss=1.7732, Train Top-1 Acc=0.5227, Train Top-5 Acc=0.8304, Val Loss=2.2669, Val Top-1 Acc=0.4099, Val Top-5 Acc=0.7304, Epoch Time=151.07s
+Epoch 30: Train Loss=1.7539, Train Top-1 Acc=0.5314, Train Top-5 Acc=0.8387, Val Loss=2.2625, Val Top-1 Acc=0.4183, Val Top-5 Acc=0.7330, Epoch Time=150.62s
+Checkpoint saved at checkpoints/scheduler_ResNet20_ResNet20_bs128_lr0.01_mom0.99_drop0.0_xavier-uniform_none_cutout_epoch30.npz
+Epoch 31: Train Loss=1.7500, Train Top-1 Acc=0.5348, Train Top-5 Acc=0.8415, Val Loss=2.2325, Val Top-1 Acc=0.4238, Val Top-5 Acc=0.7379, Epoch Time=151.07s
+Epoch 32: Train Loss=1.7000, Train Top-1 Acc=0.5312, Train Top-5 Acc=0.8401, Val Loss=2.3056, Val Top-1 Acc=0.4072, Val Top-5 Acc=0.7273, Epoch Time=150.63s
+Epoch 33: Train Loss=1.6858, Train Top-1 Acc=0.5517, Train Top-5 Acc=0.8496, Val Loss=2.2689, Val Top-1 Acc=0.4250, Val Top-5 Acc=0.7328, Epoch Time=151.09s
+Epoch 34: Train Loss=1.6754, Train Top-1 Acc=0.5375, Train Top-5 Acc=0.8442, Val Loss=2.3093, Val Top-1 Acc=0.4103, Val Top-5 Acc=0.7267, Epoch Time=150.63s
+Epoch 35: Train Loss=1.6557, Train Top-1 Acc=0.5543, Train Top-5 Acc=0.8555, Val Loss=2.2888, Val Top-1 Acc=0.4189, Val Top-5 Acc=0.7321, Epoch Time=151.08s
+Checkpoint saved at checkpoints/scheduler_ResNet20_ResNet20_bs128_lr0.01_mom0.99_drop0.0_xavier-uniform_none_cutout_epoch35.npz
+Epoch 36: Train Loss=1.6490, Train Top-1 Acc=0.5497, Train Top-5 Acc=0.8533, Val Loss=2.2916, Val Top-1 Acc=0.4162, Val Top-5 Acc=0.7358, Epoch Time=150.62s
+Epoch 37: Train Loss=1.6192, Train Top-1 Acc=0.5567, Train Top-5 Acc=0.8592, Val Loss=2.2858, Val Top-1 Acc=0.4211, Val Top-5 Acc=0.7379, Epoch Time=151.09s
+Epoch 38: Train Loss=1.6152, Train Top-1 Acc=0.5608, Train Top-5 Acc=0.8600, Val Loss=2.2823, Val Top-1 Acc=0.4183, Val Top-5 Acc=0.7417, Epoch Time=150.62s
+Epoch 39: Train Loss=1.6072, Train Top-1 Acc=0.5668, Train Top-5 Acc=0.8621, Val Loss=2.2790, Val Top-1 Acc=0.4254, Val Top-5 Acc=0.7378, Epoch Time=151.08s
+Epoch 40: Train Loss=1.5851, Train Top-1 Acc=0.5717, Train Top-5 Acc=0.8641, Val Loss=2.2984, Val Top-1 Acc=0.4211, Val Top-5 Acc=0.7326, Epoch Time=150.63s
+Checkpoint saved at checkpoints/scheduler_ResNet20_ResNet20_bs128_lr0.01_mom0.99_drop0.0_xavier-uniform_none_cutout_epoch40.npz
+Epoch 41: Train Loss=1.5823, Train Top-1 Acc=0.5643, Train Top-5 Acc=0.8586, Val Loss=2.2939, Val Top-1 Acc=0.4226, Val Top-5 Acc=0.7380, Epoch Time=151.08s
+Epoch 42: Train Loss=1.5790, Train Top-1 Acc=0.5733, Train Top-5 Acc=0.8677, Val Loss=2.2991, Val Top-1 Acc=0.4185, Val Top-5 Acc=0.7345, Epoch Time=150.63s
+Epoch 43: Train Loss=1.5481, Train Top-1 Acc=0.5825, Train Top-5 Acc=0.8735, Val Loss=2.3246, Val Top-1 Acc=0.4151, Val Top-5 Acc=0.7330, Epoch Time=151.08s
+Epoch 44: Train Loss=1.5304, Train Top-1 Acc=0.5772, Train Top-5 Acc=0.8707, Val Loss=2.3317, Val Top-1 Acc=0.4190, Val Top-5 Acc=0.7341, Epoch Time=150.63s
+Epoch 45: Train Loss=1.5439, Train Top-1 Acc=0.5739, Train Top-5 Acc=0.8679, Val Loss=2.3271, Val Top-1 Acc=0.4136, Val Top-5 Acc=0.7316, Epoch Time=151.08s
+Checkpoint saved at checkpoints/scheduler_ResNet20_ResNet20_bs128_lr0.01_mom0.99_drop0.0_xavier-uniform_none_cutout_epoch45.npz
+Epoch 46: Train Loss=1.5222, Train Top-1 Acc=0.5808, Train Top-5 Acc=0.8726, Val Loss=2.3186, Val Top-1 Acc=0.4177, Val Top-5 Acc=0.7333, Epoch Time=150.62s
+Epoch 47: Train Loss=1.5048, Train Top-1 Acc=0.5926, Train Top-5 Acc=0.8796, Val Loss=2.3393, Val Top-1 Acc=0.4219, Val Top-5 Acc=0.7363, Epoch Time=151.07s
+Epoch 48: Train Loss=1.5013, Train Top-1 Acc=0.5845, Train Top-5 Acc=0.8758, Val Loss=2.3235, Val Top-1 Acc=0.4237, Val Top-5 Acc=0.7352, Epoch Time=150.63s
+Epoch 49: Train Loss=1.5049, Train Top-1 Acc=0.5861, Train Top-5 Acc=0.8774, Val Loss=2.3565, Val Top-1 Acc=0.4156, Val Top-5 Acc=0.7293, Epoch Time=151.07s
+Early stopping at epoch 49
+Saved best model weights to checkpoints/scheduler_ResNet20_ResNet20_bs128_lr0.01_mom0.99_drop0.0_xavier-uniform_none_cutout.npz
+Total training time: 7391.47s

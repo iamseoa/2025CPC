@@ -1,5 +1,3 @@
-# scheduler.py
-
 import os
 import cupy as cp
 import numpy as np
@@ -31,11 +29,11 @@ class CosineAnnealingLR:
         self.initial_lr = optimizer.lr
     def step(self, metrics=None):
         self.last_epoch += 1
-        cosine_decay = (1 + cp.cos(cp.pi * self.last_epoch / self.T_max)) / 2
+        cosine_decay = (1 + cp.cos(cp.asarray(np.pi * self.last_epoch / self.T_max))) / 2
         self.optimizer.lr = self.initial_lr * cosine_decay
 
 class ReduceLROnPlateau:
-    def __init__(self, optimizer, factor=0.5, patience=5, verbose=False, min_lr=1e-6):
+    def __init__(self, optimizer, factor=0.3, patience=3, verbose=False, min_lr=1e-6):
         self.optimizer = optimizer
         self.factor = factor
         self.patience = patience
@@ -56,25 +54,6 @@ class ReduceLROnPlateau:
             self.optimizer.lr = new_lr
             self.num_bad_epochs = 0
 
-def custom_initialize(model, method, dist):
-    for param in model.params:
-        if not hasattr(param, "shape") or not isinstance(param, cp.ndarray):
-            continue
-        shape = param.shape
-        if len(shape) < 2:
-            continue
-        fan_in, fan_out = shape[1], shape[0]
-        if method == "xavier":
-            scale = cp.sqrt(6.0 / (fan_in + fan_out)) if dist == "uniform" else cp.sqrt(2.0 / (fan_in + fan_out))
-        elif method == "he":
-            scale = cp.sqrt(6.0 / fan_in) if dist == "uniform" else cp.sqrt(2.0 / fan_in)
-        else:
-            raise ValueError("Invalid init method")
-        if dist == "uniform":
-            param[...] = cp.random.uniform(-scale, scale, shape)
-        elif dist == "normal":
-            param[...] = cp.random.normal(0, scale, shape)
-
 def safe_scalar(x):
     if isinstance(x, (list, tuple, np.ndarray, cp.ndarray)):
         x = np.asarray(x)
@@ -84,23 +63,24 @@ def safe_scalar(x):
     return float(x)
 
 def run_experiment(model_class, model_name, batch_size, lr, epochs, patience,
-                   momentum, dropout_p, scheduler_name, init_method, init_dist):
+                   momentum, dropout_p, scheduler_name):
     train_loader, val_loader, test_loader = load_cifar100(batch_size=batch_size)
-    save_name = f"{model_name}_bs{batch_size}_lr{lr}_mom{momentum}_drop{dropout_p}_{init_method}-{init_dist}_{scheduler_name}"
+    save_name = f"{model_name}_{scheduler_name}"
+
     if model_name == "MobileNetV2":
         model = model_class(num_classes=100, dropout_p=dropout_p)
     else:
         model = model_class(num_classes=100)
-    custom_initialize(model, init_method, init_dist)
+
     print_model_size(model.params, save_name)
     optimizer = SGD(model.params, lr=lr, momentum=momentum)
 
     if scheduler_name == "steplr":
-        scheduler = StepLR(optimizer, step_size=30, gamma=0.1)
+        scheduler = StepLR(optimizer, step_size=epochs // 3, gamma=0.2)
     elif scheduler_name == "cosine":
         scheduler = CosineAnnealingLR(optimizer, T_max=epochs)
     elif scheduler_name == "plateau":
-        scheduler = ReduceLROnPlateau(optimizer, factor=0.5, patience=5, verbose=True)
+        scheduler = ReduceLROnPlateau(optimizer, factor=0.3, patience=3, verbose=True)
     else:
         raise ValueError("Unknown scheduler")
 
@@ -123,13 +103,13 @@ if __name__ == "__main__":
     patience = 10
     schedulers = ["steplr", "cosine", "plateau"]
     model_settings = [
-        (ResNet20, "ResNet20", 64, 0.01, 0.99, 0.2, "xavier", "uniform"),
-        (MiniDenseNet, "MiniDenseNet", 128, 0.001, 0.9, 0.2, "he", "normal"),
-        (MobileNetV2, "MobileNetV2", 128, 0.001, 0.9, 0.3, "he", "normal"),
+        (ResNet20, "ResNet20", 64, 0.05, 0.99, 0.2),
+        (MiniDenseNet, "MiniDenseNet", 128, 0.005, 0.9, 0.4),
+        (MobileNetV2, "MobileNetV2", 128, 0.005, 0.9, 0.5),
     ]
-    for model_class, model_name, batch_size, lr, momentum, dropout_p, init_method, init_dist in model_settings:
+    for model_class, model_name, batch_size, lr, momentum, dropout_p in model_settings:
         for scheduler_name in schedulers:
             print(f"Training {model_name} with LR scheduler: {scheduler_name}")
             run_experiment(model_class, model_name, batch_size, lr, epochs, patience,
-                           momentum, dropout_p, scheduler_name, init_method, init_dist)
+                           momentum, dropout_p, scheduler_name)
 

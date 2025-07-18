@@ -1,0 +1,4 @@
+Epoch 1: Train Loss=4.4377, Val Loss=4.2199, Val Top-1 Acc=0.0443, Epoch Time=127.55s
+Epoch 2: Train Loss=4.1015, Val Loss=4.0022, Val Top-1 Acc=0.0827, Epoch Time=127.11s
+Saved best model weights to checkpoints/scheduler_ResNet20_lr0.01_cosine_ResNet20_lr0.01_cosine.npz
+Total training time: 254.74s

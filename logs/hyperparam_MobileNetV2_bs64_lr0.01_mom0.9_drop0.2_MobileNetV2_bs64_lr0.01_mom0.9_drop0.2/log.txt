@@ -1,0 +1,29 @@
+Epoch 1: Train Loss=4.1026, Train Top-1 Acc=0.1539, Train Top-5 Acc=0.4032, Val Loss=3.6913, Val Top-1 Acc=0.1381, Val Top-5 Acc=0.3803, Epoch Time=469.23s
+Epoch 2: Train Loss=3.4300, Train Top-1 Acc=0.2264, Train Top-5 Acc=0.5179, Val Loss=3.3248, Val Top-1 Acc=0.2026, Val Top-5 Acc=0.4789, Epoch Time=469.68s
+Epoch 3: Train Loss=3.0745, Train Top-1 Acc=0.2903, Train Top-5 Acc=0.6076, Val Loss=3.0792, Val Top-1 Acc=0.2483, Val Top-5 Acc=0.5409, Epoch Time=469.49s
+Epoch 4: Train Loss=2.7896, Train Top-1 Acc=0.3382, Train Top-5 Acc=0.6695, Val Loss=2.9361, Val Top-1 Acc=0.2678, Val Top-5 Acc=0.5810, Epoch Time=469.70s
+Epoch 5: Train Loss=2.5537, Train Top-1 Acc=0.4004, Train Top-5 Acc=0.7213, Val Loss=2.7886, Val Top-1 Acc=0.3068, Val Top-5 Acc=0.6108, Epoch Time=470.54s
+Epoch 6: Train Loss=2.3445, Train Top-1 Acc=0.4361, Train Top-5 Acc=0.7600, Val Loss=2.7199, Val Top-1 Acc=0.3204, Val Top-5 Acc=0.6279, Epoch Time=470.22s
+Epoch 7: Train Loss=2.1551, Train Top-1 Acc=0.4835, Train Top-5 Acc=0.7955, Val Loss=2.6717, Val Top-1 Acc=0.3327, Val Top-5 Acc=0.6487, Epoch Time=469.27s
+Epoch 8: Train Loss=1.9810, Train Top-1 Acc=0.5261, Train Top-5 Acc=0.8293, Val Loss=2.6390, Val Top-1 Acc=0.3545, Val Top-5 Acc=0.6509, Epoch Time=470.31s
+Epoch 9: Train Loss=1.8197, Train Top-1 Acc=0.5760, Train Top-5 Acc=0.8621, Val Loss=2.6227, Val Top-1 Acc=0.3573, Val Top-5 Acc=0.6617, Epoch Time=469.01s
+Epoch 10: Train Loss=1.6766, Train Top-1 Acc=0.6065, Train Top-5 Acc=0.8858, Val Loss=2.6046, Val Top-1 Acc=0.3652, Val Top-5 Acc=0.6731, Epoch Time=470.16s
+Epoch 11: Train Loss=1.5377, Train Top-1 Acc=0.6367, Train Top-5 Acc=0.9028, Val Loss=2.6818, Val Top-1 Acc=0.3650, Val Top-5 Acc=0.6712, Epoch Time=470.19s
+Epoch 12: Train Loss=1.4034, Train Top-1 Acc=0.6747, Train Top-5 Acc=0.9230, Val Loss=2.7038, Val Top-1 Acc=0.3663, Val Top-5 Acc=0.6722, Epoch Time=470.13s
+Epoch 13: Train Loss=1.2674, Train Top-1 Acc=0.6971, Train Top-5 Acc=0.9350, Val Loss=2.7889, Val Top-1 Acc=0.3680, Val Top-5 Acc=0.6650, Epoch Time=469.92s
+Epoch 14: Train Loss=1.1677, Train Top-1 Acc=0.7241, Train Top-5 Acc=0.9496, Val Loss=2.8236, Val Top-1 Acc=0.3683, Val Top-5 Acc=0.6723, Epoch Time=469.81s
+Epoch 15: Train Loss=1.0463, Train Top-1 Acc=0.7385, Train Top-5 Acc=0.9551, Val Loss=2.9157, Val Top-1 Acc=0.3688, Val Top-5 Acc=0.6705, Epoch Time=470.54s
+Epoch 16: Train Loss=0.9557, Train Top-1 Acc=0.7814, Train Top-5 Acc=0.9691, Val Loss=2.9384, Val Top-1 Acc=0.3807, Val Top-5 Acc=0.6753, Epoch Time=468.66s
+Epoch 17: Train Loss=0.8639, Train Top-1 Acc=0.7943, Train Top-5 Acc=0.9747, Val Loss=3.0238, Val Top-1 Acc=0.3699, Val Top-5 Acc=0.6752, Epoch Time=469.89s
+Epoch 18: Train Loss=0.7758, Train Top-1 Acc=0.8092, Train Top-5 Acc=0.9796, Val Loss=3.1856, Val Top-1 Acc=0.3643, Val Top-5 Acc=0.6654, Epoch Time=470.11s
+Epoch 19: Train Loss=0.7000, Train Top-1 Acc=0.8320, Train Top-5 Acc=0.9836, Val Loss=3.2413, Val Top-1 Acc=0.3709, Val Top-5 Acc=0.6680, Epoch Time=469.86s
+Epoch 20: Train Loss=0.6305, Train Top-1 Acc=0.8398, Train Top-5 Acc=0.9866, Val Loss=3.3602, Val Top-1 Acc=0.3739, Val Top-5 Acc=0.6623, Epoch Time=471.22s
+Epoch 21: Train Loss=0.5812, Train Top-1 Acc=0.8431, Train Top-5 Acc=0.9884, Val Loss=3.4619, Val Top-1 Acc=0.3702, Val Top-5 Acc=0.6671, Epoch Time=469.92s
+Epoch 22: Train Loss=0.5241, Train Top-1 Acc=0.8641, Train Top-5 Acc=0.9907, Val Loss=3.5336, Val Top-1 Acc=0.3707, Val Top-5 Acc=0.6586, Epoch Time=469.94s
+Epoch 23: Train Loss=0.4701, Train Top-1 Acc=0.8828, Train Top-5 Acc=0.9926, Val Loss=3.5874, Val Top-1 Acc=0.3755, Val Top-5 Acc=0.6593, Epoch Time=470.21s
+Epoch 24: Train Loss=0.4190, Train Top-1 Acc=0.8994, Train Top-5 Acc=0.9950, Val Loss=3.6248, Val Top-1 Acc=0.3739, Val Top-5 Acc=0.6623, Epoch Time=469.96s
+Epoch 25: Train Loss=0.3793, Train Top-1 Acc=0.8999, Train Top-5 Acc=0.9943, Val Loss=3.7418, Val Top-1 Acc=0.3794, Val Top-5 Acc=0.6653, Epoch Time=470.93s
+Epoch 26: Train Loss=0.3647, Train Top-1 Acc=0.9033, Train Top-5 Acc=0.9955, Val Loss=3.7471, Val Top-1 Acc=0.3781, Val Top-5 Acc=0.6677, Epoch Time=468.25s
+Early stopping at epoch 26
+Saved best model weights to checkpoints/hyperparam_MobileNetV2_bs64_lr0.01_mom0.9_drop0.2_MobileNetV2_bs64_lr0.01_mom0.9_drop0.2.npz
+Total training time: 12217.20s

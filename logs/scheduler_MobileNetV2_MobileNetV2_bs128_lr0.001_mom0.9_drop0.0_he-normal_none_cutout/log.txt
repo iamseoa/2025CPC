@@ -1,0 +1,42 @@
+Epoch 1: Train Loss=4.4671, Train Top-1 Acc=0.0630, Train Top-5 Acc=0.2105, Val Loss=4.2029, Val Top-1 Acc=0.0619, Val Top-5 Acc=0.2020, Epoch Time=294.53s
+Epoch 2: Train Loss=4.0642, Train Top-1 Acc=0.1079, Train Top-5 Acc=0.3105, Val Loss=3.9086, Val Top-1 Acc=0.0957, Val Top-5 Acc=0.2891, Epoch Time=294.94s
+Epoch 3: Train Loss=3.7997, Train Top-1 Acc=0.1469, Train Top-5 Acc=0.3837, Val Loss=3.6965, Val Top-1 Acc=0.1348, Val Top-5 Acc=0.3666, Epoch Time=294.41s
+Epoch 4: Train Loss=3.5989, Train Top-1 Acc=0.1760, Train Top-5 Acc=0.4299, Val Loss=3.5456, Val Top-1 Acc=0.1603, Val Top-5 Acc=0.4080, Epoch Time=294.51s
+Epoch 5: Train Loss=3.4519, Train Top-1 Acc=0.2031, Train Top-5 Acc=0.4707, Val Loss=3.4417, Val Top-1 Acc=0.1790, Val Top-5 Acc=0.4395, Epoch Time=295.17s
+Checkpoint saved at checkpoints/scheduler_MobileNetV2_MobileNetV2_bs128_lr0.001_mom0.9_drop0.0_he-normal_none_cutout_epoch5.npz
+Epoch 6: Train Loss=3.3234, Train Top-1 Acc=0.2246, Train Top-5 Acc=0.5000, Val Loss=3.3636, Val Top-1 Acc=0.1935, Val Top-5 Acc=0.4586, Epoch Time=293.59s
+Epoch 7: Train Loss=3.2112, Train Top-1 Acc=0.2455, Train Top-5 Acc=0.5289, Val Loss=3.2936, Val Top-1 Acc=0.2054, Val Top-5 Acc=0.4795, Epoch Time=294.81s
+Epoch 8: Train Loss=3.1078, Train Top-1 Acc=0.2681, Train Top-5 Acc=0.5554, Val Loss=3.2368, Val Top-1 Acc=0.2115, Val Top-5 Acc=0.4875, Epoch Time=295.31s
+Epoch 9: Train Loss=3.0119, Train Top-1 Acc=0.2854, Train Top-5 Acc=0.5800, Val Loss=3.1833, Val Top-1 Acc=0.2254, Val Top-5 Acc=0.5043, Epoch Time=295.00s
+Epoch 10: Train Loss=2.9250, Train Top-1 Acc=0.3053, Train Top-5 Acc=0.6006, Val Loss=3.1471, Val Top-1 Acc=0.2318, Val Top-5 Acc=0.5116, Epoch Time=295.15s
+Checkpoint saved at checkpoints/scheduler_MobileNetV2_MobileNetV2_bs128_lr0.001_mom0.9_drop0.0_he-normal_none_cutout_epoch10.npz
+Epoch 11: Train Loss=2.8271, Train Top-1 Acc=0.3223, Train Top-5 Acc=0.6232, Val Loss=3.1117, Val Top-1 Acc=0.2365, Val Top-5 Acc=0.5244, Epoch Time=294.26s
+Epoch 12: Train Loss=2.7529, Train Top-1 Acc=0.3367, Train Top-5 Acc=0.6407, Val Loss=3.0963, Val Top-1 Acc=0.2401, Val Top-5 Acc=0.5297, Epoch Time=294.24s
+Epoch 13: Train Loss=2.6852, Train Top-1 Acc=0.3574, Train Top-5 Acc=0.6624, Val Loss=3.0623, Val Top-1 Acc=0.2456, Val Top-5 Acc=0.5379, Epoch Time=294.29s
+Epoch 14: Train Loss=2.6069, Train Top-1 Acc=0.3712, Train Top-5 Acc=0.6787, Val Loss=3.0376, Val Top-1 Acc=0.2586, Val Top-5 Acc=0.5454, Epoch Time=294.62s
+Epoch 15: Train Loss=2.5300, Train Top-1 Acc=0.3887, Train Top-5 Acc=0.6949, Val Loss=3.0259, Val Top-1 Acc=0.2574, Val Top-5 Acc=0.5482, Epoch Time=295.05s
+Checkpoint saved at checkpoints/scheduler_MobileNetV2_MobileNetV2_bs128_lr0.001_mom0.9_drop0.0_he-normal_none_cutout_epoch15.npz
+Epoch 16: Train Loss=2.4589, Train Top-1 Acc=0.4047, Train Top-5 Acc=0.7139, Val Loss=3.0205, Val Top-1 Acc=0.2601, Val Top-5 Acc=0.5515, Epoch Time=294.55s
+Epoch 17: Train Loss=2.3863, Train Top-1 Acc=0.4251, Train Top-5 Acc=0.7292, Val Loss=3.0011, Val Top-1 Acc=0.2689, Val Top-5 Acc=0.5554, Epoch Time=294.44s
+Epoch 18: Train Loss=2.3136, Train Top-1 Acc=0.4373, Train Top-5 Acc=0.7438, Val Loss=3.0078, Val Top-1 Acc=0.2694, Val Top-5 Acc=0.5571, Epoch Time=294.66s
+Epoch 19: Train Loss=2.2444, Train Top-1 Acc=0.4573, Train Top-5 Acc=0.7589, Val Loss=3.0075, Val Top-1 Acc=0.2730, Val Top-5 Acc=0.5602, Epoch Time=294.47s
+Epoch 20: Train Loss=2.1813, Train Top-1 Acc=0.4724, Train Top-5 Acc=0.7720, Val Loss=3.0089, Val Top-1 Acc=0.2760, Val Top-5 Acc=0.5635, Epoch Time=294.30s
+Checkpoint saved at checkpoints/scheduler_MobileNetV2_MobileNetV2_bs128_lr0.001_mom0.9_drop0.0_he-normal_none_cutout_epoch20.npz
+Epoch 21: Train Loss=2.1023, Train Top-1 Acc=0.4881, Train Top-5 Acc=0.7865, Val Loss=3.0159, Val Top-1 Acc=0.2736, Val Top-5 Acc=0.5664, Epoch Time=293.49s
+Epoch 22: Train Loss=2.0363, Train Top-1 Acc=0.5052, Train Top-5 Acc=0.7974, Val Loss=3.0216, Val Top-1 Acc=0.2761, Val Top-5 Acc=0.5668, Epoch Time=293.78s
+Epoch 23: Train Loss=1.9701, Train Top-1 Acc=0.5241, Train Top-5 Acc=0.8136, Val Loss=3.0292, Val Top-1 Acc=0.2772, Val Top-5 Acc=0.5671, Epoch Time=294.22s
+Epoch 24: Train Loss=1.8948, Train Top-1 Acc=0.5410, Train Top-5 Acc=0.8241, Val Loss=3.0611, Val Top-1 Acc=0.2770, Val Top-5 Acc=0.5638, Epoch Time=293.58s
+Epoch 25: Train Loss=1.8288, Train Top-1 Acc=0.5589, Train Top-5 Acc=0.8396, Val Loss=3.1004, Val Top-1 Acc=0.2742, Val Top-5 Acc=0.5584, Epoch Time=293.12s
+Checkpoint saved at checkpoints/scheduler_MobileNetV2_MobileNetV2_bs128_lr0.001_mom0.9_drop0.0_he-normal_none_cutout_epoch25.npz
+Epoch 26: Train Loss=1.7618, Train Top-1 Acc=0.5768, Train Top-5 Acc=0.8525, Val Loss=3.1067, Val Top-1 Acc=0.2743, Val Top-5 Acc=0.5637, Epoch Time=293.58s
+Epoch 27: Train Loss=1.6943, Train Top-1 Acc=0.5949, Train Top-5 Acc=0.8621, Val Loss=3.1436, Val Top-1 Acc=0.2724, Val Top-5 Acc=0.5602, Epoch Time=294.45s
+Epoch 28: Train Loss=1.6332, Train Top-1 Acc=0.6146, Train Top-5 Acc=0.8730, Val Loss=3.1537, Val Top-1 Acc=0.2754, Val Top-5 Acc=0.5648, Epoch Time=294.28s
+Epoch 29: Train Loss=1.5577, Train Top-1 Acc=0.6300, Train Top-5 Acc=0.8838, Val Loss=3.1780, Val Top-1 Acc=0.2699, Val Top-5 Acc=0.5607, Epoch Time=294.35s
+Epoch 30: Train Loss=1.4904, Train Top-1 Acc=0.6529, Train Top-5 Acc=0.8955, Val Loss=3.2138, Val Top-1 Acc=0.2690, Val Top-5 Acc=0.5645, Epoch Time=293.98s
+Checkpoint saved at checkpoints/scheduler_MobileNetV2_MobileNetV2_bs128_lr0.001_mom0.9_drop0.0_he-normal_none_cutout_epoch30.npz
+Epoch 31: Train Loss=1.4293, Train Top-1 Acc=0.6690, Train Top-5 Acc=0.9061, Val Loss=3.2523, Val Top-1 Acc=0.2757, Val Top-5 Acc=0.5534, Epoch Time=294.18s
+Epoch 32: Train Loss=1.3620, Train Top-1 Acc=0.6793, Train Top-5 Acc=0.9138, Val Loss=3.2868, Val Top-1 Acc=0.2712, Val Top-5 Acc=0.5549, Epoch Time=294.65s
+Epoch 33: Train Loss=1.2935, Train Top-1 Acc=0.7016, Train Top-5 Acc=0.9238, Val Loss=3.3007, Val Top-1 Acc=0.2718, Val Top-5 Acc=0.5609, Epoch Time=294.92s
+Early stopping at epoch 33
+Saved best model weights to checkpoints/scheduler_MobileNetV2_MobileNetV2_bs128_lr0.001_mom0.9_drop0.0_he-normal_none_cutout.npz
+Total training time: 9715.01s

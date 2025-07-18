@@ -1,3 +1,5 @@
+import cupy as cp
+
 # adam.py
 class Adam:
     def __init__(self, params, lr=0.001, betas=(0.9, 0.999), eps=1e-8, weight_decay=0.0):

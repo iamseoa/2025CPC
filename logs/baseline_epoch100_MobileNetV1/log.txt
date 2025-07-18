@@ -1,0 +1,4 @@
+Epoch 1: Train Loss=4.6176, Train Top-1 Acc=0.0311, Train Top-5 Acc=0.1165, Val Loss=4.5114, Val Top-1 Acc=0.0323, Val Top-5 Acc=0.1114, Epoch Time=67.22s
+Epoch 1: Train Loss=4.8538, Train Top-1 Acc=0.0168, Train Top-5 Acc=0.0706, Val Loss=4.7953, Val Top-1 Acc=0.0147, Val Top-5 Acc=0.0666, Epoch Time=219.80s
+Epoch 1: Train Loss=nan, Train Top-1 Acc=0.0100, Train Top-5 Acc=0.0496, Val Loss=nan, Val Top-1 Acc=0.0101, Val Top-5 Acc=0.0505, Epoch Time=137.54s
+Epoch 2: Train Loss=nan, Train Top-1 Acc=0.0100, Train Top-5 Acc=0.0496, Val Loss=nan, Val Top-1 Acc=0.0101, Val Top-5 Acc=0.0505, Epoch Time=137.08s

@@ -1,0 +1,39 @@
+Epoch 1: Train Loss=3.9542, Train Top-1 Acc=0.2035, Train Top-5 Acc=0.4470, Val Loss=3.6018, Val Top-1 Acc=0.1716, Val Top-5 Acc=0.3996, Epoch Time=125.69s
+Epoch 2: Train Loss=3.3019, Train Top-1 Acc=0.2823, Train Top-5 Acc=0.5540, Val Loss=3.3008, Val Top-1 Acc=0.2297, Val Top-5 Acc=0.4784, Epoch Time=125.72s
+Epoch 3: Train Loss=2.9499, Train Top-1 Acc=0.3455, Train Top-5 Acc=0.6258, Val Loss=3.1045, Val Top-1 Acc=0.2589, Val Top-5 Acc=0.5275, Epoch Time=125.71s
+Epoch 4: Train Loss=2.6847, Train Top-1 Acc=0.3942, Train Top-5 Acc=0.6794, Val Loss=2.9556, Val Top-1 Acc=0.2854, Val Top-5 Acc=0.5633, Epoch Time=125.71s
+Epoch 5: Train Loss=2.4619, Train Top-1 Acc=0.4390, Train Top-5 Acc=0.7233, Val Loss=2.8510, Val Top-1 Acc=0.3083, Val Top-5 Acc=0.5884, Epoch Time=125.72s
+Epoch 6: Train Loss=2.2770, Train Top-1 Acc=0.4803, Train Top-5 Acc=0.7548, Val Loss=2.7673, Val Top-1 Acc=0.3214, Val Top-5 Acc=0.6107, Epoch Time=125.72s
+Epoch 7: Train Loss=2.1153, Train Top-1 Acc=0.5163, Train Top-5 Acc=0.7820, Val Loss=2.6976, Val Top-1 Acc=0.3402, Val Top-5 Acc=0.6289, Epoch Time=125.74s
+Epoch 8: Train Loss=1.9744, Train Top-1 Acc=0.5450, Train Top-5 Acc=0.8061, Val Loss=2.6612, Val Top-1 Acc=0.3506, Val Top-5 Acc=0.6390, Epoch Time=125.72s
+Epoch 9: Train Loss=1.8459, Train Top-1 Acc=0.5802, Train Top-5 Acc=0.8302, Val Loss=2.6162, Val Top-1 Acc=0.3627, Val Top-5 Acc=0.6443, Epoch Time=125.75s
+Epoch 10: Train Loss=1.7319, Train Top-1 Acc=0.6024, Train Top-5 Acc=0.8461, Val Loss=2.6103, Val Top-1 Acc=0.3600, Val Top-5 Acc=0.6544, Epoch Time=125.72s
+Epoch 11: Train Loss=1.6309, Train Top-1 Acc=0.6350, Train Top-5 Acc=0.8622, Val Loss=2.5847, Val Top-1 Acc=0.3647, Val Top-5 Acc=0.6594, Epoch Time=125.73s
+Epoch 12: Train Loss=1.5333, Train Top-1 Acc=0.6582, Train Top-5 Acc=0.8764, Val Loss=2.5726, Val Top-1 Acc=0.3719, Val Top-5 Acc=0.6622, Epoch Time=125.75s
+Epoch 13: Train Loss=1.4450, Train Top-1 Acc=0.6825, Train Top-5 Acc=0.8906, Val Loss=2.5704, Val Top-1 Acc=0.3774, Val Top-5 Acc=0.6644, Epoch Time=125.74s
+Epoch 14: Train Loss=1.3580, Train Top-1 Acc=0.7028, Train Top-5 Acc=0.9012, Val Loss=2.5680, Val Top-1 Acc=0.3788, Val Top-5 Acc=0.6678, Epoch Time=125.76s
+Epoch 15: Train Loss=1.2759, Train Top-1 Acc=0.7263, Train Top-5 Acc=0.9121, Val Loss=2.5639, Val Top-1 Acc=0.3815, Val Top-5 Acc=0.6725, Epoch Time=125.73s
+Epoch 16: Train Loss=1.1999, Train Top-1 Acc=0.7499, Train Top-5 Acc=0.9224, Val Loss=2.5750, Val Top-1 Acc=0.3807, Val Top-5 Acc=0.6751, Epoch Time=125.71s
+Epoch 17: Train Loss=1.1257, Train Top-1 Acc=0.7697, Train Top-5 Acc=0.9314, Val Loss=2.5841, Val Top-1 Acc=0.3819, Val Top-5 Acc=0.6728, Epoch Time=125.72s
+Epoch 18: Train Loss=1.0606, Train Top-1 Acc=0.7871, Train Top-5 Acc=0.9378, Val Loss=2.5983, Val Top-1 Acc=0.3823, Val Top-5 Acc=0.6773, Epoch Time=125.73s
+Epoch 19: Train Loss=0.9954, Train Top-1 Acc=0.7951, Train Top-5 Acc=0.9432, Val Loss=2.6235, Val Top-1 Acc=0.3823, Val Top-5 Acc=0.6742, Epoch Time=125.75s
+Epoch 20: Train Loss=0.9346, Train Top-1 Acc=0.8198, Train Top-5 Acc=0.9517, Val Loss=2.6324, Val Top-1 Acc=0.3814, Val Top-5 Acc=0.6742, Epoch Time=125.73s
+Epoch 21: Train Loss=0.8765, Train Top-1 Acc=0.8378, Train Top-5 Acc=0.9577, Val Loss=2.6401, Val Top-1 Acc=0.3833, Val Top-5 Acc=0.6758, Epoch Time=125.76s
+Epoch 22: Train Loss=0.8231, Train Top-1 Acc=0.8530, Train Top-5 Acc=0.9624, Val Loss=2.6696, Val Top-1 Acc=0.3801, Val Top-5 Acc=0.6745, Epoch Time=125.75s
+Epoch 23: Train Loss=0.7678, Train Top-1 Acc=0.8691, Train Top-5 Acc=0.9675, Val Loss=2.6817, Val Top-1 Acc=0.3836, Val Top-5 Acc=0.6763, Epoch Time=125.73s
+Epoch 24: Train Loss=0.7132, Train Top-1 Acc=0.8772, Train Top-5 Acc=0.9712, Val Loss=2.7184, Val Top-1 Acc=0.3790, Val Top-5 Acc=0.6738, Epoch Time=125.73s
+Epoch 25: Train Loss=0.6705, Train Top-1 Acc=0.8941, Train Top-5 Acc=0.9767, Val Loss=2.7129, Val Top-1 Acc=0.3825, Val Top-5 Acc=0.6774, Epoch Time=125.72s
+Epoch 26: Train Loss=0.6263, Train Top-1 Acc=0.9073, Train Top-5 Acc=0.9801, Val Loss=2.7375, Val Top-1 Acc=0.3839, Val Top-5 Acc=0.6752, Epoch Time=125.71s
+Epoch 27: Train Loss=0.5815, Train Top-1 Acc=0.9163, Train Top-5 Acc=0.9830, Val Loss=2.7692, Val Top-1 Acc=0.3837, Val Top-5 Acc=0.6736, Epoch Time=125.71s
+Epoch 28: Train Loss=0.5440, Train Top-1 Acc=0.9264, Train Top-5 Acc=0.9852, Val Loss=2.7985, Val Top-1 Acc=0.3808, Val Top-5 Acc=0.6716, Epoch Time=125.71s
+Epoch 29: Train Loss=0.5050, Train Top-1 Acc=0.9334, Train Top-5 Acc=0.9882, Val Loss=2.8256, Val Top-1 Acc=0.3818, Val Top-5 Acc=0.6735, Epoch Time=125.71s
+Epoch 30: Train Loss=0.4671, Train Top-1 Acc=0.9445, Train Top-5 Acc=0.9903, Val Loss=2.8511, Val Top-1 Acc=0.3800, Val Top-5 Acc=0.6681, Epoch Time=125.72s
+Epoch 31: Train Loss=0.4326, Train Top-1 Acc=0.9505, Train Top-5 Acc=0.9917, Val Loss=2.8780, Val Top-1 Acc=0.3787, Val Top-5 Acc=0.6683, Epoch Time=125.73s
+Epoch 32: Train Loss=0.4038, Train Top-1 Acc=0.9564, Train Top-5 Acc=0.9933, Val Loss=2.9043, Val Top-1 Acc=0.3828, Val Top-5 Acc=0.6666, Epoch Time=125.73s
+Epoch 33: Train Loss=0.3755, Train Top-1 Acc=0.9626, Train Top-5 Acc=0.9943, Val Loss=2.9297, Val Top-1 Acc=0.3794, Val Top-5 Acc=0.6688, Epoch Time=125.72s
+Epoch 34: Train Loss=0.3504, Train Top-1 Acc=0.9674, Train Top-5 Acc=0.9950, Val Loss=2.9639, Val Top-1 Acc=0.3774, Val Top-5 Acc=0.6630, Epoch Time=125.72s
+Epoch 35: Train Loss=0.3246, Train Top-1 Acc=0.9686, Train Top-5 Acc=0.9958, Val Loss=2.9945, Val Top-1 Acc=0.3774, Val Top-5 Acc=0.6641, Epoch Time=125.71s
+Epoch 36: Train Loss=0.3003, Train Top-1 Acc=0.9764, Train Top-5 Acc=0.9973, Val Loss=3.0065, Val Top-1 Acc=0.3776, Val Top-5 Acc=0.6632, Epoch Time=125.72s
+Early stopping at epoch 36
+Saved best model weights to checkpoints/initcompare_MiniDenseNet_bs128_lr0.001_mom0.9_drop0.2_xavier-normal_MiniDenseNet_bs128_lr0.001_mom0.9_drop0.2_xavier-normal.npz
+Total training time: 4526.15s
